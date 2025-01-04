@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./1.css">
+    <title>Document</title>
+    <style>
+        .f{
+            box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="dzs" onclick="GongNeng1()">
+        0
+    </button>
+    <script>
+        function GongNeng1() {
+            let number = window.document.getElementById('dzs');
+            let numbermove = parseInt(number.innerText);
+            newnumber = numbermove + 1;
+            number.innerText = newnumber;
+            return
+        }
+    </script>
+</body>
+<footer>
+    <a href="./1.html">1.html</a>
+    <a href="./boxtext.html">boxtext.html</a>
+    <a href="./error.html">error.html</a>
+    <a href="./index.html">index.html</a>
+</footer>
+
+</html>
