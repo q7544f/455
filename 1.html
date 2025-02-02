@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <style>
+        .f {
+            box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+                rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="dzs" onclick="GongNeng1()">
+        0
+    </button>
+    <script>
+        function GongNeng1() {
+            let number = window.document.getElementById('dzs');
+            let numbermove = parseInt(number.innerText);
+            newnumber = numbermove + 1;
+            number.innerText = newnumber;
+            return
+        }
+    </script>
+    <div>
+        <input placeholder="shiqing" id="gn1input1">
+        <span id="gn1span1" onclick='gn1()'>✔</span>
+    </div>
+    <script>
+        let gn1001 = false;//00是空格 1指第一个参数
+
+        function gn1(){
+            let gn1span1=document.getElementById("gn1span1");
+            let gn1input1=document.getElementById("gn1input1")
+            if(gn1001){
+                gn1001=false;
+                gn1span1.innerText="✔";
+                gn1input1.value="";
+                gn1input1.readOnly=false;
+                window.localStorage.removeItem("gn1span1")
+            }
+            else {
+                gn1001=true;
+                gn1span1.innerText="✘";
+                gn1input1.readOnly=true;
+                window.localStorage.setItem("gn1span1",gn1input1.value)
+            }
+        }
+        let data=window.localStorage.getItem("gn1span1")
+        if(data){
+            document.getElementById("gn1input1").value=data;
+            gn1();
+        }
+    </script>
+</body>
+<footer>
+    <a href="./1.html">1.html</a>
+    <a href="./boxtext.html">boxtext.html</a>
+    <a href="./error.html">error.html</a>
+    <a href="./2.html">2.html</a>
+</footer>
+
+</html>

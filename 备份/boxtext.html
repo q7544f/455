@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #eee;
+            display: flex;
+        }
+
+
+        .box {
+            display: flex;
+            background-color: white;
+            margin: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        .Gongneng {
+            background-color: rgb(153, 236, 229);
+            text-align: center;
+            font-size: 30px;
+            margin: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        .y {
+            box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+                rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+
+        }
+    </style>
+</head>
+
+<body style="flex-direction: column;">
+    <!--顶部-->
+    <div style="height: 60px;font-size: 30px;background-color: aquamarine;" class="box">
+        <a href="./boxtext.html" style="text-decoration: none;">
+            <div style="font-family: cursive;font-size: 55px;color:black">C网</div>
+            <!-- 注册 -->
+            <!-- 登录 -->
+        </a>
+    </div>
+    <div style=" flex: 1;" class="box" style="background-color: #eee;">
+        <!-- 功能区 -->
+        <div class="box" style="flex-direction: column; flex:1;">
+            <div class="Gongneng y">
+                <div style="font-size: 25px;">记下你所想的</div>
+            </div>
+            <div class="Gongneng y">功能</div>
+            <div class="Gongneng y">功能</div>
+        </div>
+        <!--内容-->
+        <div style="flex:5;background-color: #eee;">
+            <!--块1-->
+            <div style="display: flex;">
+                <div class="box y" style="flex:1;height: 100px;">数据</div>
+                <div class="box y" style="flex:1;height: 100px;">数据</div>
+                <div class="box y" style="flex:1;height: 100px;">数据</div>
+            </div>
+            <!--行-->
+            <div style="display: flex;">
+                <div class="box y" style="height: 200px;flex: 1;">1</div>
+                <div class="box y" style="height: 200px;flex: 1;">1</div>
+                <div class="box y" style="height: 200px;flex: 1;">1</div>
+                <div class="box y" style="height: 200px;flex: 1;">1</div>
+            </div>
+        </div>
+    </div>
+    <!--跳转-->
+    <footer style="background-color: rgb(235, 229, 158);">
+        <a href="./1.html">1.html</a>
+        <a href="./boxtext.html">boxtext.html</a>
+        <a href="./error.html">error.html</a>
+        <a href="./2.html">2.html</a>
+    </footer>
+</body>
+
+</html>
